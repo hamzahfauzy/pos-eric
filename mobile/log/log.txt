@@ -1,0 +1,72 @@
+2020-07-27 15:05:07.217[192.168.0.8] 
+-- GET: array (
+  'query' => 'pb_update-pkb',
+)
+-- POST:array (
+)
+-- REQUEST: array (
+  'query' => 'pb_update-pkb',
+)
+
+2020-07-27 15:05:07.217[192.168.0.8]  -- {"complaint":"rem blong","hotline_part":[],"mechanic_suggest":"tidak ada","part":[{"part_id":74644,"quantity":1},{"part_id":75127,"quantity":1}],"part_demand":[],"part_price":5357000.0,"part_promo_code":"","part_promo_price":0.0,"part_total_price":0.0,"pit_id":3,"pkb_id":0,"service_price":18000.0,"service_promo_code":"","service_promo_price":0.0,"service_total_price":18000.0,"service_type":["TC012"]}
+
+2020-07-27 15:10:17.893[180.241.47.156] 
+-- GET: array (
+  'query' => 'pb_update-pkb',
+)
+-- POST:array (
+)
+-- REQUEST: array (
+  'query' => 'pb_update-pkb',
+)
+
+2020-07-27 15:10:17.893[180.241.47.156]  -- {"complaint":"rem blong","hotline_part":[],"mechanic_suggest":"tidak ada","part":[{"part_id":74541,"quantity":1},{"part_id":74838,"quantity":1}],"part_demand":[],"part_price":142000.0,"part_promo_code":"","part_promo_price":0.0,"part_total_price":0.0,"pit_id":4,"pkb_id":0,"service_price":18000.0,"service_promo_code":"","service_promo_price":0.0,"service_total_price":18000.0,"service_type":["TC012"]}
+
+2020-07-27 15:18:49.201[192.168.0.8] 
+-- GET: array (
+  'query' => 'pb_update-pkb',
+)
+-- POST:array (
+)
+-- REQUEST: array (
+  'query' => 'pb_update-pkb',
+)
+
+2020-07-27 15:18:49.201[192.168.0.8]  -- {"complaint":"rem blong","hotline_part":[],"mechanic_suggest":"tidak ada analisa","part":[{"part_id":74644,"quantity":1},{"part_id":75127,"quantity":1}],"part_demand":[],"part_price":5357000.0,"part_promo_code":"","part_promo_price":0.0,"part_total_price":0.0,"pit_id":3,"pkb_id":0,"service_price":18000.0,"service_promo_code":"","service_promo_price":0.0,"service_total_price":18000.0,"service_type":["TC012"]}
+
+2020-07-27 15:23:37.825[192.168.0.8] 
+-- GET: array (
+  'query' => 'pb_update-pkb',
+)
+-- POST:array (
+)
+-- REQUEST: array (
+  'query' => 'pb_update-pkb',
+)
+
+2020-07-27 15:23:37.825[192.168.0.8]  -- {"complaint":"rem blong dan","hotline_part":[],"mechanic_suggest":"tidak ada analisa","part":[{"part_id":74644,"quantity":1},{"part_id":75127,"quantity":1}],"part_demand":[],"part_price":5357000.0,"part_promo_code":"","part_promo_price":0.0,"part_total_price":0.0,"pit_id":3,"pkb_id":0,"service_price":18000.0,"service_promo_code":"","service_promo_price":0.0,"service_total_price":18000.0,"service_type":["TC012"]}
+
+2020-07-27 16:16:26.542[180.241.47.156] 
+-- GET: array (
+  'query' => 'pb_update-pkb',
+)
+-- POST:array (
+)
+-- REQUEST: array (
+  'query' => 'pb_update-pkb',
+)
+
+2020-07-27 16:16:26.542[180.241.47.156]  -- {"complaint":"mesin sering mati","hotline_part":[],"mechanic_suggest":"servis injeksi","part":[{"part_id":74342,"quantity":1},{"part_id":74712,"quantity":1}],"part_demand":[],"part_price":1531000.0,"part_promo_code":"","part_promo_price":0.0,"part_total_price":0.0,"pit_id":4,"pkb_id":0,"service_price":18000.0,"service_promo_code":"","service_promo_price":0.0,"service_total_price":18000.0,"service_type":["TC012"]}
+
+2020-07-28 10:08:59.963[192.168.0.8] 
+-- GET: array (
+  'query' => 'pb_update-pkb',
+)
+-- POST:array (
+)
+-- REQUEST: array (
+  'query' => 'pb_update-pkb',
+)
+
+2020-07-28 10:08:59.963[192.168.0.8]  -- {"complaint":"MOTOR CEPAT PANAS","hotline_part":[],"mechanic_suggest":"SERVICE LENGKAP DAN GANTI OLI","part":[{"part_id":78857,"quantity":1}],"part_demand":[],"part_price":45500.0,"part_promo_code":"","part_promo_price":0.0,"part_total_price":0.0,"pit_id":2,"pkb_id":0,"service_price":75000.0,"service_promo_code":"","service_promo_price":0.0,"service_total_price":75000.0,"service_type":["TC132"]}
+

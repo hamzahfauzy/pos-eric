@@ -1,0 +1,22 @@
+RewriteEngine On
+#https://www.smashingmagazine.com/2011/11/introduction-to-url-rewriting/
+#https://documenter.getpostman.com/view/384106/SVtSXVf6?version=latest#intro
+#http://localhost/sc-api/???
+
+#get
+RewriteRule ^configurasi/list$							sc-gate.php?query=configurasi-list [NC,L]
+RewriteRule ^profile/list$								sc-gate.php?query=profile-list&%{QUERY_STRING} [NC,L]
+RewriteRule ^customer/list$								sc-gate.php?query=customer-list&%{QUERY_STRING} [NC,L]
+RewriteRule ^kategori/list$								sc-gate.php?query=kategori-list&%{QUERY_STRING} [NC,L]
+RewriteRule ^items/list$								sc-gate.php?query=items-list&%{QUERY_STRING} [NC,L]
+RewriteRule ^order/list$								sc-gate.php?query=order-list&%{QUERY_STRING} [NC,L]
+RewriteRule ^order/detail/list$							sc-gate.php?query=order-detail-list&%{QUERY_STRING} [NC,L]
+RewriteRule ^invoice/list$								sc-gate.php?query=invoice-list&%{QUERY_STRING} [NC,L]
+RewriteRule ^invoice/detail/list$						sc-gate.php?query=invoice-detail-list&%{QUERY_STRING} [NC,L]
+
+#post auth
+RewriteRule ^auth/login$								sc-gate.php?query=login [NC,L]
+RewriteRule ^auth/logout$								sc-gate.php?query=logout [NC,L]
+
+#post CRUD
+RewriteRule ^profile/edit$								sc-gate.php?query=profile-edit&%{QUERY_STRING} [NC,L]
