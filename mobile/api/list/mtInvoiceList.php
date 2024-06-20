@@ -43,9 +43,27 @@ EOD;
 $sql = <<<EOD
 SELECT *
 FROM (
-	Select A.ID_Penjualan, A.NomorFaktur, A.Tanggal, A.ID_Customer, A.NamaCustomer, A.AlamatLengkap, A.Telepon, A.ID_Sales, A.NamaSales, 
-		A.ID_Gudang, A.NamaGudang, A.NamaSupir, A.TanggalJatuhTempo, 
-		A.Keterangan, A.TotalPenjualan, A.Potongan, A.PersenPotongan, A.TotalTransaksi, A.DPP, A.PPN, B.JlhItems As TotalItems,
+	Select 	A.ID_Penjualan, 
+		A.NomorFaktur, 
+		A.Tanggal, 
+		A.TanggalJatuhTempo,
+		A.ID_Customer, 
+		A.NamaCustomer, 
+		A.AlamatLengkap, 
+		A.Telepon, 
+		A.ID_Sales, 
+		A.NamaSales, 
+		A.ID_Gudang, 
+		A.NamaGudang, 
+		A.NamaSupir, 
+		A.Keterangan, 
+		A.TotalPenjualan, 
+		CAST(A.Potongan as numeric(10,0)) Potongan, 
+		CAST(A.PersenPotongan as numeric(10,0)) PersenPotongan, 
+		A.TotalTransaksi, 
+		CAST(A.DPP as numeric(10,0)) DPP, 
+		CAST(A.PPN as numeric(10,0)) PPN, 
+		B.JlhItems As TotalItems,
 		ROW_NUMBER() OVER (Order By A.Tanggal, A.NomorFaktur) As RowNumber   
 	From tblPenjualan A
 		Left Join (Select Count(*) As JlhItems, ID_Penjualan From tblPenjualanDetail Group By ID_Penjualan) B On A.ID_Penjualan = B.ID_Penjualan 
