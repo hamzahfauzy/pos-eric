@@ -13,6 +13,7 @@ RewriteRule ^order/list$								sc-gate.php?query=order-list&%{QUERY_STRING} [NC
 RewriteRule ^order/detail/list$							sc-gate.php?query=order-detail-list&%{QUERY_STRING} [NC,L]
 RewriteRule ^invoice/list$								sc-gate.php?query=invoice-list&%{QUERY_STRING} [NC,L]
 RewriteRule ^invoice/detail/list$						sc-gate.php?query=invoice-detail-list&%{QUERY_STRING} [NC,L]
+RewriteRule ^karyawan/list$								sc-gate.php?query=karyawan-list&%{QUERY_STRING} [NC,L]
 
 #post auth
 RewriteRule ^auth/login$								sc-gate.php?query=login [NC,L]
@@ -20,3 +21,9 @@ RewriteRule ^auth/logout$								sc-gate.php?query=logout [NC,L]
 
 #post CRUD
 RewriteRule ^profile/edit$								sc-gate.php?query=profile-edit&%{QUERY_STRING} [NC,L]
+RewriteRule ^order/new$									sc-gate.php?query=order-new [NC,L]
+RewriteRule ^order/update$								sc-gate.php?query=order-update [NC,L]
+RewriteRule ^order/cancel$								sc-gate.php?query=order-cancel [NC,L]
+RewriteRule ^items/new$									sc-gate.php?query=items-new [NC,L]
+RewriteRule ^items/update$								sc-gate.php?query=items-update [NC,L]
+RewriteRule ^items/delete$								sc-gate.php?query=items-delete [NC,L]
