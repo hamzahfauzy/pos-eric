@@ -35,8 +35,19 @@ EOD;
 $sql = <<<EOD
 SELECT *
 FROM (
-	Select A.ID_PenjualanDetail, A.ID_Penjualan, A.ID_Item, A.ID_ItemDetail, A.KodeItem, A.NamaItem, 
-		A.HargaJualSatuan, A.Jumlah As QtyJual, A.Satuan, A.DiskonItem, A.PersenDiskonItem1, A.NominalDiskonItem, A.TotalHargaJual,  
+	Select 	A.ID_PenjualanDetail, 
+		A.ID_Penjualan, 
+		A.ID_Item, 
+		A.ID_ItemDetail, 
+		A.KodeItem, 
+		A.NamaItem, 
+		A.HargaJualSatuan, 	
+		A.Jumlah As QtyJual, 
+		A.Satuan, 
+		CAST(A.DiskonItem as numeric(10,0)) DiskonItem , 
+		CAST(A.PersenDiskonItem1 as numeric(10,0)) PersenDiskonItem1, 
+		CAST(A.NominalDiskonItem as numeric(10,0)) NominalDiskonItem , 
+		CAST(A.TotalHargaJual as numeric(10,0)) TotalHargaJual ,  
 		ROW_NUMBER() OVER (Order By A.ID_PenjualanDetail) As RowNumber   
 	From tblPenjualanDetail A 
 	Where A.ID_Penjualan = :idpenjualan  
